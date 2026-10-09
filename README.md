@@ -3,6 +3,7 @@
 # HireCrack
 
 [![CI](https://github.com/mishanilkazreen/hirecrack/actions/workflows/ci.yml/badge.svg)](https://github.com/mishanilkazreen/hirecrack/actions/workflows/ci.yml)
+[![Download](https://img.shields.io/github/v/release/mishanilkazreen/hirecrack?include_prereleases&label=download&color=d6084d)](https://github.com/mishanilkazreen/hirecrack/releases)
 [![License: PolyForm Noncommercial](https://img.shields.io/badge/license-PolyForm%20Noncommercial-blue.svg)](LICENSE)
 
 Free, source-available practice for one-way video interviews (HireVue-style) that runs locally and connects to cloud APIs.
@@ -15,7 +16,9 @@ You see a question, get some thinking time, and record a 1–2 minute answer. Yo
 
 ## Download
 
-Get the latest `HireCrack Setup 1.0.0.exe` (installer) or `HireCrack-1.0.0-portable.exe` from the [Releases](../../releases) page.
+**[Download the latest version from Releases](https://github.com/mishanilkazreen/hirecrack/releases)**.
+
+HireCrack is in early alpha, so expect rough edges. Only the Windows build has been tested so far so please open up issues as problems arise.
 
 > The exe is not code-signed, so Windows SmartScreen may warn you. Click **More info → Run anyway**.
 
