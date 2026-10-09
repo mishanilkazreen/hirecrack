@@ -1,0 +1,7 @@
+node_modules/
+dist/
+release/
+public/mediapipe/
+*.log
+.DS_Store
+release-next/

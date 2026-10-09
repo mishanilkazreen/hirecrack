@@ -1,0 +1,12 @@
+# Wait 3 days (minutes) before installing newly published versions.
+minimumReleaseAge: 4320
+# Refuse transitive deps from git/tarball URLs (registry only).
+blockExoticSubdeps: true
+# Fail install if a dependency has an unreviewed build script.
+strictDepBuilds: true
+# Install scripts: nothing is allowed to run. (electron 44 has no install script;
+# its binary is fetched on first run / by electron-builder.) false = deliberately blocked.
+allowBuilds:
+  electron-winstaller: false # Squirrel installer; only NSIS/portable targets are used
+  onnxruntime-node: false # optional GPU binary download; app uses onnxruntime-web in the browser
+  protobufjs: false # postinstall only prints a version-scheme notice

@@ -1,0 +1,323 @@
+/* Results report, engine setup and onboarding. Uses the tokens from styles.css. */
+:root {
+  --neg: #b3261e;
+  --pos: #1b7a46;
+  --neg-soft: #fbeceb;
+  --pos-soft: #e8f4ed;
+}
+
+/* Engine setup */
+.engine-setup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.engine-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.engine-block p {
+  margin: 0;
+}
+.engine-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+.engine-action {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+.engine-action > div {
+  width: 100%;
+}
+.engine-test {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+.engine-status {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.engine-ok {
+  color: var(--pos);
+}
+.engine-bad {
+  color: var(--neg);
+}
+.engine-advanced summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Onboarding */
+.onboarding {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.onboarding-logo {
+  height: 56px;
+  width: auto;
+  align-self: flex-start;
+}
+.onboarding h2,
+.onboarding p {
+  margin: 0;
+}
+.onboarding-actions {
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Report layout */
+.report-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+@media (max-width: 860px) {
+  .report-top,
+  .engine-pair {
+    grid-template-columns: 1fr;
+  }
+}
+.report-video video {
+  object-fit: contain;
+}
+.video-missing {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: #c9ced6;
+}
+
+/* Score */
+.report-score {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.verdict {
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.verdict-neg {
+  color: var(--neg);
+}
+.verdict-pos {
+  color: var(--pos);
+}
+.verdict-neutral {
+  color: var(--text);
+}
+.scale {
+  position: relative;
+  height: 22px;
+  margin-top: 0.5rem;
+}
+.scale-track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 8px;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #e9a7a2 0%, #e6e8eb 50%, #8fcaa7 100%);
+}
+.scale-zero {
+  position: absolute;
+  left: 50%;
+  top: 2px;
+  height: 18px;
+  width: 2px;
+  background: var(--muted);
+  transform: translateX(-1px);
+}
+.scale-marker {
+  position: absolute;
+  top: 2px;
+  width: 14px;
+  height: 18px;
+  border-radius: 4px;
+  border: 2px solid var(--surface);
+  box-shadow: 0 0 0 1px var(--muted);
+  transform: translateX(-50%);
+}
+.marker-neg {
+  background: var(--neg);
+}
+.marker-pos {
+  background: var(--pos);
+}
+.marker-neutral {
+  background: var(--muted);
+}
+.scale-labels {
+  display: flex;
+  justify-content: space-between;
+}
+.score-num {
+  margin: 0;
+}
+.report-summary {
+  margin: 0.25rem 0 0;
+}
+
+/* Feedback points */
+.redflags {
+  border: 1px solid var(--neg);
+  background: var(--neg-soft);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+}
+.redflags h3 {
+  color: var(--neg);
+}
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.redflags .point + .point {
+  margin-top: 1rem;
+}
+.point {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  gap: 0.6rem;
+}
+.point p {
+  margin: 0.25rem 0 0;
+}
+.point blockquote {
+  margin: 0;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--border);
+  color: var(--muted);
+  font-style: italic;
+}
+.point-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1;
+  margin-top: 0.1rem;
+  background: var(--neg-soft);
+  color: var(--neg);
+}
+.point-positive .point-icon {
+  background: var(--pos-soft);
+  color: var(--pos);
+}
+.point-red_flag .point-icon {
+  background: var(--neg);
+  color: #fff;
+}
+.suggestion {
+  color: var(--text);
+}
+
+/* Aspects */
+.aspects {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.aspects li {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 0.9rem;
+  align-items: start;
+}
+.aspect-label {
+  font-weight: 600;
+}
+.rating {
+  position: relative;
+  height: 8px;
+  margin-top: 0.55rem;
+  border-radius: 4px;
+  background: #eceef1;
+}
+.rating-zero {
+  position: absolute;
+  left: 50%;
+  top: -3px;
+  bottom: -3px;
+  width: 2px;
+  background: var(--muted);
+}
+.rating-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+/* Better answer */
+.better {
+  background: var(--accent-soft);
+  border-color: transparent;
+}
+.better-text {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.info {
+  display: inline-grid;
+  place-items: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  border: 1px solid var(--muted);
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  vertical-align: middle;
+  cursor: help;
+}
+
+.bar-indeterminate {
+  position: relative;
+  overflow: hidden;
+}
+.bar-indeterminate .bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 35%;
+  animation: bar-slide 1.2s ease-in-out infinite;
+}
+@keyframes bar-slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(300%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bar-indeterminate .bar-fill {
+    animation-duration: 3s;
+  }
+}
+
+/* Download and Test buttons line up with the selects and inputs beside them. */
+.engine-action .btn {
+  height: var(--control-h);
+}

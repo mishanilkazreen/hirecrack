@@ -1,0 +1,113 @@
+{
+  "name": "hirecrack",
+  "productName": "HireCrack",
+  "version": "0.1.0",
+  "description": "HireCrack: free, local, source-available practice for one-way video interviews (HireVue-style).",
+  "author": {
+    "name": "Mishanil Kazreen"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "homepage": "https://github.com/mishanilkazreen/hirecrack#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishanilkazreen/hirecrack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mishanilkazreen/hirecrack/issues"
+  },
+  "private": true,
+  "packageManager": "pnpm@12.10.1",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "postinstall": "node scripts/copy-assets.mjs",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:unit": "vitest run --project unit",
+    "test:integration": "vitest run --project integration",
+    "test:watch": "vitest",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "electron": "pnpm build && electron .",
+    "electron:dev": "cross-env ELECTRON_DEV_URL=http://localhost:5173 electron .",
+    "dist": "pnpm build && electron-builder --win",
+    "dist:all": "pnpm build && electron-builder"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@huggingface/transformers": "^4.3.0",
+    "@mediapipe/tasks-vision": "^1.0.1",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "cross-env": "^10.1.0",
+    "electron": "^44.5.1",
+    "electron-builder": "^26.15.3",
+    "eslint": "^10.12.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "fake-indexeddb": "^6.2.5",
+    "globals": "^17.13.0",
+    "jsdom": "^30.1.2",
+    "prettier": "^3.9.9",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "typescript": "^7.0.2",
+    "typescript-eslint": "^8.71.1",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3"
+  },
+  "build": {
+    "appId": "com.mishanilkazreen.hirecrack",
+    "productName": "HireCrack",
+    "copyright": "Copyright © 2026 Mishanil Kazreen",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "electron/**",
+      "dist/**",
+      "package.json"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "category": "public.app-category.education"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createStartMenuShortcut": true,
+      "createDesktopShortcut": false,
+      "shortcutName": "HireCrack",
+      "runAfterFinish": true,
+      "uninstallDisplayName": "HireCrack",
+      "deleteAppDataOnUninstall": false,
+      "include": "build/installer.nsh"
+    },
+    "portable": {
+      "artifactName": "${productName}-${version}-portable.exe"
+    }
+  }
+}

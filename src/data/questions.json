@@ -1,0 +1,188 @@
+[
+  {
+    "id": "b01",
+    "text": "Tell me about a time you worked in a team to achieve a goal. What was your role and what was the outcome?",
+    "category": "behavioral",
+    "competencies": ["teamwork"]
+  },
+  {
+    "id": "b02",
+    "text": "Describe a time you disagreed with a colleague or teammate. How did you handle it?",
+    "category": "behavioral",
+    "competencies": ["teamwork", "communication"]
+  },
+  {
+    "id": "b03",
+    "text": "Tell me about a time you faced a difficult problem at work or university. How did you approach solving it?",
+    "category": "behavioral",
+    "competencies": ["problem_solving"]
+  },
+  {
+    "id": "b04",
+    "text": "Give an example of a time you had to adapt quickly to a major change. What did you do?",
+    "category": "behavioral",
+    "competencies": ["adaptability"]
+  },
+  {
+    "id": "b05",
+    "text": "Describe a goal you set for yourself that was difficult to reach. How did you stay motivated and what happened?",
+    "category": "behavioral",
+    "competencies": ["drive"]
+  },
+  {
+    "id": "b06",
+    "text": "Tell me about a time you took the lead on a project or task without being asked.",
+    "category": "behavioral",
+    "competencies": ["leadership", "drive"]
+  },
+  {
+    "id": "b07",
+    "text": "Tell me about a time you made a mistake. How did you handle it and what did you learn?",
+    "category": "behavioral",
+    "competencies": ["integrity", "adaptability"]
+  },
+  {
+    "id": "b08",
+    "text": "Describe a time you had to explain something complicated to someone with no background in the topic.",
+    "category": "behavioral",
+    "competencies": ["communication"]
+  },
+  {
+    "id": "b09",
+    "text": "Tell me about a time you had several competing deadlines. How did you decide what to do first?",
+    "category": "behavioral",
+    "competencies": ["problem_solving", "drive"]
+  },
+  {
+    "id": "b10",
+    "text": "Describe a time you did the right thing even though it was difficult or unpopular.",
+    "category": "behavioral",
+    "competencies": ["integrity"]
+  },
+  {
+    "id": "b11",
+    "text": "Tell me about a time you motivated others to get a task done.",
+    "category": "behavioral",
+    "competencies": ["leadership", "teamwork"]
+  },
+  {
+    "id": "s01",
+    "text": "Imagine a teammate is not completing their share of a group task and the deadline is close. What would you do?",
+    "category": "situational",
+    "competencies": ["teamwork", "communication"]
+  },
+  {
+    "id": "s02",
+    "text": "You realise you have made an error in a report that has already been sent to your manager. What do you do?",
+    "category": "situational",
+    "competencies": ["integrity", "communication"]
+  },
+  {
+    "id": "s03",
+    "text": "Your priorities change suddenly halfway through a project. How would you respond?",
+    "category": "situational",
+    "competencies": ["adaptability"]
+  },
+  {
+    "id": "s04",
+    "text": "You are given a task you have never done before and little guidance. How would you get started?",
+    "category": "situational",
+    "competencies": ["problem_solving", "drive"]
+  },
+  {
+    "id": "s05",
+    "text": "You notice a colleague bending a company rule to hit their targets. What would you do?",
+    "category": "situational",
+    "competencies": ["integrity"]
+  },
+  {
+    "id": "s06",
+    "text": "You are leading a small group and two members strongly disagree on the approach. How do you resolve it?",
+    "category": "situational",
+    "competencies": ["leadership", "communication"]
+  },
+  {
+    "id": "m01",
+    "text": "Why are you interested in this role and our company?",
+    "category": "motivational",
+    "competencies": ["drive", "communication"]
+  },
+  {
+    "id": "m02",
+    "text": "What motivates you to do your best work?",
+    "category": "motivational",
+    "competencies": ["drive"]
+  },
+  {
+    "id": "m03",
+    "text": "Where do you see yourself in five years, and how does this role fit into that?",
+    "category": "motivational",
+    "competencies": ["drive", "adaptability"]
+  },
+  {
+    "id": "m04",
+    "text": "What is your greatest strength, and how has it helped you achieve something?",
+    "category": "motivational",
+    "competencies": ["communication", "drive"]
+  },
+  {
+    "id": "g01",
+    "text": "Tell me about a university project or society activity you are proud of and what you contributed.",
+    "category": "graduate",
+    "competencies": ["teamwork", "drive"]
+  },
+  {
+    "id": "g02",
+    "text": "How have you balanced your studies with other commitments such as work, sport or volunteering?",
+    "category": "graduate",
+    "competencies": ["drive", "problem_solving"]
+  },
+  {
+    "id": "g03",
+    "text": "Describe a time you learned a new skill quickly outside the classroom.",
+    "category": "graduate",
+    "competencies": ["adaptability", "drive"]
+  },
+  {
+    "id": "g04",
+    "text": "Why did you choose your degree, and how will it help you in this internship or graduate programme?",
+    "category": "graduate",
+    "competencies": ["drive", "communication"]
+  },
+  {
+    "id": "c01",
+    "text": "Tell me about a time you went above and beyond to help a customer.",
+    "category": "customer",
+    "competencies": ["customer_focus", "drive"]
+  },
+  {
+    "id": "c02",
+    "text": "A customer is upset and shouting about a problem that is not your fault. How do you handle the conversation?",
+    "category": "customer",
+    "competencies": ["customer_focus", "communication"]
+  },
+  {
+    "id": "c03",
+    "text": "Describe a time you had to say no to a customer or client. How did you do it?",
+    "category": "customer",
+    "competencies": ["customer_focus", "integrity"]
+  },
+  {
+    "id": "c04",
+    "text": "How would you find out what a customer really needs when they are not sure themselves?",
+    "category": "customer",
+    "competencies": ["customer_focus", "problem_solving"]
+  },
+  {
+    "id": "t01",
+    "text": "Describe a time you used data or analysis to make or support a decision.",
+    "category": "technical",
+    "competencies": ["problem_solving"]
+  },
+  {
+    "id": "t02",
+    "text": "Tell me about a technical or analytical problem you solved. Walk me through your process step by step.",
+    "category": "technical",
+    "competencies": ["problem_solving", "communication"]
+  }
+]
