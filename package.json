@@ -1,7 +1,7 @@
 {
   "name": "hirecrack",
   "productName": "HireCrack",
-  "version": "0.1.0",
+  "version": "0.0.1-alpha.1",
   "description": "HireCrack: free, local, source-available practice for one-way video interviews (HireVue-style).",
   "author": {
     "name": "Mishanil Kazreen"
